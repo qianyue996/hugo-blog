@@ -1,0 +1,4 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: 你好，欢迎来到我的博客
+theme: ["PaperMod"]
