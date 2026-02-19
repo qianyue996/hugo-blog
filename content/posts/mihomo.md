@@ -2,7 +2,7 @@
 title: "使用 mihomo 搭建透明代理，实现零DNS泄露"
 date: 2026-02-08T22:32:03+08:00
 description: "使用 mihomo 搭建透明代理，实现零DNS泄露"
-draft: true
+draft: false
 ---
 
 ## 下载内核
@@ -80,7 +80,7 @@ dns: # 白名单模式
   default-nameserver:
     - 223.5.5.5
   nameserver-policy:
-    'GEOSITE:cn, GEOSITE:china-list, GEOSITE:geolocation-cn': # 必须设置为白名单模式
+    "GEOSITE:cn, GEOSITE:china-list, GEOSITE:geolocation-cn": # 必须设置为白名单模式
       - https://dns.alidns.com/dns-query
   nameserver:
     - https://cloudflare-dns.com/dns-query
@@ -91,7 +91,7 @@ proxies:
   - name: "直连"
     type: direct
     udp: true
-    
+
 proxy-groups:
   - name: 默认
     type: select
